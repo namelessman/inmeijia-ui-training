@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <slider></slider>
+    <info></info>
   </div>
 </template>
 
 <script>
   import Slider from '@/components/Slider'
+  import Info from '@/components/Info'
   export default {
     components: {
-      Slider
+      Slider,
+      Info
     }
   }
 </script>

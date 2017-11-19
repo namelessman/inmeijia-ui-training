@@ -1,6 +1,6 @@
 <template>
     <div class="slider" :style="{height:height}">
-        <mt-swipe :auto="0">
+        <mt-swipe :auto="4000">
             <mt-swipe-item v-for="banner in banners" :key="banner">
                 <img :src="banner">
             </mt-swipe-item>
