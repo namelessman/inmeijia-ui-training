@@ -90,7 +90,7 @@ export default {
             .text-sec{
                 color: @font-secondary-color;
                 font-size: @font-secondary-size;
-                padding-bottom: 80px;
+                padding-bottom: 40px;
             }
         }
 

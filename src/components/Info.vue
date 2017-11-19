@@ -84,25 +84,24 @@
             &:after{
                 content: '';
                 position: absolute;
+                left: 0;
+                top: 0;
+                width: 40px;
+                height: 40px;
                 border-radius: 50%;
                 border: 1px solid @light-green;
 
-                animation: round 5s infinite;
+                animation: round 3s infinite;
                 
                 @keyframes round {
                     0% {
-                        width: 0;
-                        height: 0;
                         opacity: 0;
                     }
                     50% {
-                        width: 80px;
-                        height: 80px;
+                        transform: scale(1.5);
                         opacity: 1;
                     }
                     100% {
-                        width: 0;
-                        height: 0;
                         opacity: 0;
                     }
                 }
