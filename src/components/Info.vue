@@ -79,6 +79,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            box-shadow: 0 2px 8px 0 @light-green;
+
+            &:after{
+                content: '';
+                position: absolute;
+                border-radius: 50%;
+                border: 1px solid @light-green;
+
+                animation: round 5s infinite;
+                
+                @keyframes round {
+                    0% {
+                        width: 0;
+                        height: 0;
+                        opacity: 0;
+                    }
+                    50% {
+                        width: 80px;
+                        height: 80px;
+                        opacity: 1;
+                    }
+                    100% {
+                        width: 0;
+                        height: 0;
+                        opacity: 0;
+                    }
+                }
+            }
         }
     }
     .button{
@@ -96,6 +124,19 @@
         img{
             width: 15px;
             margin-left: 5px;
+            animation: trans 2s infinite;
+
+            @keyframes trans {
+                0% {
+                    transform: translateX(5px);
+                }
+                50% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(5px);
+                }
+            }
         }
     }
     .text-bg{
